@@ -18,7 +18,7 @@ def parse_one_page(html):
     movies = re.findall(pattern,html)
     for item in movies:
         dict = {
-            '片面':item[0],
+            '电影名':item[0],
             '主演':item[1].strip()[3:],
             '上映时间':item[2][5:],
             '评分':item[3]+item[4]
@@ -27,7 +27,7 @@ def parse_one_page(html):
     return pageary
 
 ary = []
-for i in range(0,9):
+for i in range(0,10):
     url = 'https://maoyan.com/board/4?offset=' + str(i * 10)
     html = get_one_page(url)
     pageary = parse_one_page(html)
