@@ -1,0 +1,96 @@
+1545198741145	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3Fhpf71oolcQ"
+
+(firefox:18928): Gtk-WARNING **: 13:52:21.254: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(firefox:18928): Gtk-WARNING **: 13:52:21.254: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(firefox:18928): Gtk-WARNING **: 13:52:21.255: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19078): Gtk-WARNING **: 13:52:26.366: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:19078): Gtk-WARNING **: 13:52:26.367: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19078): Gtk-WARNING **: 13:52:26.367: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19105): Gtk-WARNING **: 13:52:26.655: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:19105): Gtk-WARNING **: 13:52:26.655: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19105): Gtk-WARNING **: 13:52:26.655: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19174): Gtk-WARNING **: 13:52:27.634: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:19174): Gtk-WARNING **: 13:52:27.634: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19174): Gtk-WARNING **: 13:52:27.635: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+1545198747684	Marionette	INFO	Listening on port 43391
+1545198747763	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545198798772	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fA9hQK8OP71b"
+
+(firefox:19302): Gtk-WARNING **: 13:53:18.831: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(firefox:19302): Gtk-WARNING **: 13:53:18.831: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(firefox:19302): Gtk-WARNING **: 13:53:18.831: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19425): Gtk-WARNING **: 13:53:19.612: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:19425): Gtk-WARNING **: 13:53:19.612: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19425): Gtk-WARNING **: 13:53:19.612: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19441): Gtk-WARNING **: 13:53:19.765: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:19441): Gtk-WARNING **: 13:53:19.765: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19441): Gtk-WARNING **: 13:53:19.765: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+1545198800264	Marionette	INFO	Listening on port 38247
+1545198800281	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:19511): Gtk-WARNING **: 13:53:20.628: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:19511): Gtk-WARNING **: 13:53:20.628: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:19511): Gtk-WARNING **: 13:53:20.628: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+[Parent 19302, Gecko_IOThread] WARNING: pipe error (86): 连接被对方重设: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1545198820178	Marionette	INFO	Stopped listening on port 38247
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1545199190839	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2gBFqe5RxGNv"
+
+(firefox:20216): Gtk-WARNING **: 13:59:50.900: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(firefox:20216): Gtk-WARNING **: 13:59:50.900: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(firefox:20216): Gtk-WARNING **: 13:59:50.900: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:20337): Gtk-WARNING **: 13:59:51.685: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:20337): Gtk-WARNING **: 13:59:51.686: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:20337): Gtk-WARNING **: 13:59:51.686: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:20353): Gtk-WARNING **: 13:59:51.834: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:20353): Gtk-WARNING **: 13:59:51.834: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:20353): Gtk-WARNING **: 13:59:51.834: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+1545199192230	Marionette	INFO	Listening on port 44973
+1545199192248	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:20430): Gtk-WARNING **: 13:59:52.691: Theme parsing error: gtk.css:4101:29: Expected ',' in color definition
+
+(/usr/lib/firefox/firefox:20430): Gtk-WARNING **: 13:59:52.691: Theme parsing error: gtk.css:4142:92: The :prelight pseudo-class is deprecated. Use :hover instead.
+
+(/usr/lib/firefox/firefox:20430): Gtk-WARNING **: 13:59:52.691: Theme parsing error: gtk.css:4146:43: The :prelight pseudo-class is deprecated. Use :hover instead.
+[Parent 20216, Gecko_IOThread] WARNING: pipe error (83): 连接被对方重设: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 20216, Gecko_IOThread] WARNING: pipe error (86): 连接被对方重设: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 18928, Gecko_IOThread] WARNING: pipe error (90): 连接被对方重设: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1545199211431	Marionette	INFO	Stopped listening on port 43391
+1545199211438	Marionette	INFO	Stopped listening on port 44973
