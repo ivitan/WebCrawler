@@ -1,2 +1,2 @@
 # WebCrawler
-- 收集的一些模板.素材
+- Python 爬虫练习
