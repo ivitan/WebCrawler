@@ -9,9 +9,9 @@ class AnjukehouseSpider(Spider):
     start_urls = ['https://guangzhou.anjuke.com/sale/p1-rd1/#filtersort']
 
     def parse(self, response):
-        # 所有URL
-        urlList = response.xpath('//div[contains(@class,"house-title")]/a/@href').extract()
-        for url in urlList:
+        # 所有房子URL
+        urls = response.xpath('//div[@class="house-title"]/a/@href').extract()
+        for url in urls:
             yield Request(url,callback=self.parse_detail)
 
         # 下一页
