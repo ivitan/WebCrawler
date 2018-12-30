@@ -29,13 +29,12 @@ def HouseUrl(url):
     time.sleep(random.random()*10)
     broswer.get(url)
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.curr')))
-    doc = pq(broswer.page_source)
-    doc = doc.find('.house-title')
-    HouseUrls = []
-    for box in doc.items():
-        HouseUrl = str(box.find('.houseListTitle').attr('href'))
-        HouseUrls.append(HouseUrl)
-    return HouseUrls
+    urls = broswer.find_elements_by_css_selector('.houseListTitle') # a 标签
+    House = []
+    for a in urls:
+        urls = a.get_attribute('href')
+        House.append(urls)
+    return House
 
 def get_detail(url):
     time.sleep(random.random() * 10)
