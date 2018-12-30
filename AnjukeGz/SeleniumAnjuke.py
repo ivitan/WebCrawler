@@ -57,7 +57,27 @@ def get_detail(url):
     houseInfo.append(info_adj)
     print(houseInfo)
     return houseInfo
-
+'''
+def get_detail(url):
+    time.sleep(random.random() * 10)
+    broswer.get(url)
+    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.houseInfoBox')))
+    info = {}
+    info['标题'] = broswer.find_element_by_css_selector('.long-title').get_attribute('textContent')
+    info['总价'] = broswer.find_elements_by_css_selector('.basic-info span')[0].get_attribute('textContent')
+    info['户型'] = broswer.find_elements_by_css_selector('.basic-info span')[1].get_attribute('textContent')
+    info['面积'] = broswer.find_elements_by_css_selector('.basic-info span')[2].get_attribute('textContent')
+    info['单价'] = broswer.find_elements_by_css_selector('.houseInfo-content')[2].get_attribute('textContent')
+    info['朝向'] = broswer.find_elements_by_css_selector('.houseInfo-content')[7].get_attribute('textContent')
+    info['月供'] = broswer.find_elements_by_css_selector('.houseInfo-content')[8].get_attribute('textContent')
+    info['楼层'] = broswer.find_elements_by_css_selector('.houseInfo-content')[-4].get_attribute('textContent')
+    info['装修'] = broswer.find_elements_by_css_selector('.houseInfo-content')[-3].get_attribute('textContent')
+    k = ['标题','总价','户型','面积','单价','朝向','月供','楼层','装修']
+    info_adj = dict(zip(k,list(info.values())))
+    houseInfo.append(info_adj)
+    print(houseInfo)
+    return houseInfo
+'''
 def save_to_csv(houseInfo):
     df = pandas.DataFrame(houseInfo)
     df.to_csv('Guangzhou.csv')
