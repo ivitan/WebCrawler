@@ -66,8 +66,8 @@ def save_to_csv(houseInfo):
 def main():
     urls = get_urls()
     for url in urls:
-        url = HouseUrl(url)
-        for Hurl in url:
+        urls = HouseUrl(url)
+        for Hurl in urls:
             houseInfo=get_detail(Hurl)
             save_to_csv(houseInfo)
     print(url)
