@@ -4,7 +4,7 @@
 # @Author  : Vitan
 # @File    : Qunar.py
 
-'''自动获取页数'''
+# 自动获取页数
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
