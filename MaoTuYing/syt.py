@@ -56,6 +56,5 @@ def main():
     url = 'https://www.tripadvisor.cn/Attraction_Review-g298555-d1580078-Reviews-Chimelong_Paradise-Guangzhou_Guangdong.html'
     view_first(url)
 
-
 if __name__ == '__main__':
     main()
