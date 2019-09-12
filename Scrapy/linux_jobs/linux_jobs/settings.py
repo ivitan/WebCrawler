@@ -54,9 +54,9 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-   'linux_jobs.middlewares.LinuxJobsSpiderMiddleware': 543,
-}
+# SPIDER_MIDDLEWARES = {
+#    'linux_jobs.middlewares.LinuxJobsSpiderMiddleware': 543,
+# }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
@@ -72,9 +72,9 @@ SPIDER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'linux_jobs.pipelines.LinuxJobsPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'linux_jobs.pipelines.Pipeline_ToCSV': 200,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

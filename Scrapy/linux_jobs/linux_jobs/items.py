@@ -15,7 +15,7 @@ class LinuxJobsItem(Item):
     city = Field()
     experience = Field()
     education = Field()
-    recruit = Field()
+    salary = Field()
     job_info = Field()
     company = Field()
     com_nature = Field()

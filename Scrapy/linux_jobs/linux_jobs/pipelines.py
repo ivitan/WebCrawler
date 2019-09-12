@@ -4,8 +4,20 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+import csv
+import os
 
 
-class LinuxJobsPipeline(object):
-    def process_item(self, item, spider):
+class Pipeline_ToCSV(object):
+
+    def __init__(self):
+        self.csvwriter = csv.writer(open('jobItem.csv', 'w'), delimiter=',')
+        self.csvwriter.writerow(['name','city','experience','salary','education','company','com_nature','com_size','com_field','job_info'])
+
+    def process_item(self, item, ampa):
+        rows = zip(item['name'],item['city'],item['experience'],item['salary'],item['education'],item['company'],item['com_nature'],item['com_size'],item['com_field'],item['job_info'])
+
+        for row in rows:
+            self.csvwriter.writerow(row)
+
         return item
