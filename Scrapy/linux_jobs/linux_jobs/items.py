@@ -18,6 +18,4 @@ class LinuxJobsItem(Item):
     salary = Field()
     job_info = Field()
     company = Field()
-    com_nature = Field()
-    com_size = Field()
-    com_field = Field()
+    com_info = Field()
