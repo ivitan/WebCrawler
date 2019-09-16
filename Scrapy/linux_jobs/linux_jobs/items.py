@@ -13,6 +13,7 @@ class LinuxJobsItem(Item):
     # name = scrapy.Field()
     name = Field()
     city = Field()
+    peops = Field()
     experience = Field()
     education = Field()
     salary = Field()
