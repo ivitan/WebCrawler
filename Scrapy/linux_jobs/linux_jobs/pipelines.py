@@ -11,7 +11,7 @@ import os
 class Pipeline_ToCSV(object):
 
     def __init__(self):
-        self.csvwriter = csv.writer(open('jobItem.csv', 'w'), delimiter=',')
+        self.csvwriter = csv.writer(open('jobs.csv', 'w'), delimiter=',')
         self.csvwriter.writerow(['name','city','peops','experience','salary','education','company','com_info','jpb_info'])
 
     def process_item(self, item, ampa):

@@ -30,16 +30,33 @@ class LinuxJobSpider(Spider):
         soup = BeautifulSoup(response.body,'lxml')
         item['name'] = response.xpath('//div[@class="jt"]/p/text()').extract()
         item['city'] = response.xpath('//div[@class="jt"]/em/text()').extract()
-        item['peops'] = response.xpath('//span[@class="s_r"]/text()').extract()
-        item['salary'] = response.xpath('//p[@class="jp"]/text()').extract()
-        item['experience'] = response.xpath('//span[@class="s_n"]/text()').extract()
-        item['education'] = response.xpath('//span[@class="s_x"]/text()').extract()
+
+        peops = response.xpath('//span[@class="s_r"]/text()').extract()
+        if peops:
+            item['peops'] = peops
+        else:
+            item['peops'] = ['暂无信息']
+
+        salary = response.xpath('//p[@class="jp"]/text()').extract()
+        if salary:
+            item['salary'] = salary
+        else:
+            item['salary'] = ['暂无信息']
+
+        experience = response.xpath('//span[@class="s_n"]/text()').extract()
+        if experience:
+            item['experience'] = experience
+        else:
+            item['experience'] = ['无要求']
+
+        education = response.xpath('//span[@class="s_x"]/text()').extract()
+        if education:
+            item['education'] = education
+        else:
+            item['education'] = ['暂无信息']
+
         item['company'] = response.xpath('//*[@id="pageContent"]/div[2]/a[1]/p/text()').extract()
         item['com_info'] = response.xpath('//*[@id="pageContent"]/div[2]/a[1]/div/text()').extract()
-        item['job_info'] = response.xpath('//div[@class="ain"]/article//text()').extract()
-        # job_info = soup.select('.ain')[0].text()
-        # print(item['company'])
-        # print(item['job_info'])
-        # item['job_info'] = list(''.join(job_info).replace("\n","").replace("\t","").replace("\xa0","").replace("\r",""))
-        # print(item['job_info'])
+        job_info = response.xpath('//div[@class="ain"]/article//text()').extract()
+        item['job_info'] = [job_info]
         return item
